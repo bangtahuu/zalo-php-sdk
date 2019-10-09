@@ -143,9 +143,9 @@ class ZaloClient {
                 $request, $rawResponse->getBody(), $rawResponse->getHttpResponseCode(), $rawResponse->getHeaders()
         );
 
-        if ($returnResponse->isError()) {
-            throw $returnResponse->getThrownException();
-        }
+        //if ($returnResponse->isError()) {
+        //    throw $returnResponse->getThrownException();
+        //}
 
         return $returnResponse;
     }
